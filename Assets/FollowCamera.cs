@@ -3,7 +3,7 @@ using UnityEngine;
 public class FollowCamera : MonoBehaviour
 {
     public Transform player;
-    public Vector3 offset = new Vector3(0f, 5f, -7f);
+    public Vector3 offset = new Vector3(0f, 1f, -3f);
     public float followSpeed = 8f;
 
     void LateUpdate()
