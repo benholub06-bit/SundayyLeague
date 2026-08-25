@@ -1707,6 +1707,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 44d5521e15a8e9b4fb47d20a395daac4, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1442962992}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 44d5521e15a8e9b4fb47d20a395daac4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1442962993}
     - targetCorrespondingSourceObject: {fileID: 430108200687226393, guid: 44d5521e15a8e9b4fb47d20a395daac4, type: 3}
       insertIndex: -1
       addedObject: {fileID: 705048286}
@@ -1875,8 +1878,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PelvisBalance
   pelvis: {fileID: 705048285}
-  balanceStrength: 80
-  balanceDamping: 12
+  uprightStrength: 45
+  uprightDamping: 8
   maxTorque: 120
 --- !u!1 &814589707 stripped
 GameObject:
@@ -3424,6 +3427,28 @@ MonoBehaviour:
   standingDamping: 12
   groundCheckDistance: 1.5
   active: 1
+--- !u!114 &1442962993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1442962987}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c14105dca0a81194a8046d47bc0d7f5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ActiveRagdollBalance
+  pelvis: {fileID: 705048285}
+  balanceStrength: 100
+  balanceDamping: 15
+  inputBalanceStrength: 40
+  recoveryStartAngle: 35
+  recoveryTorque: 180
+  recoveryLift: 18
+  maxRecoveryLift: 25
+  targetPelvisHeight: 0.9
+  groundCheckDistance: 2
 --- !u!1 &1545299687
 GameObject:
   m_ObjectHideFlags: 0
