@@ -48,7 +48,7 @@ public class RagdollMovement : MonoBehaviour
                 Vector3.up
             );
 
-        // Stop accelerating once we're near max speed.
+        // Stop accelerating once near max speed.
         if (horizontalVelocity.magnitude < maxSpeed)
         {
             pelvis.AddForce(
